@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy Cat, Sad Cat</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="boxOne">
+	<img src="Images/happyCat.png" id="sadCat">
+	<h1 id="toChange">I'm a happy cat!</h1>
+	<button onclick="makeCatSad()" id="hoverMe">Please click me</button>
+ </div>
+
+<button onclick="showAlert()" id="doNot">Don't click me.</button>
+
+<script>
+		function makeCatSad() {
+			document.getElementById("toChange").innerHTML =
+				"Now I'm sad.. oh no!";
+				changeImage();
+		}
+		function changeImage() {
+			document.getElementById("sadCat").src = "Images/sadCat.png";
+		}
+		function showAlert() {
+			alert("Help me find my home!");
+		}
+</script>
+
+
+
+</body>
+</html>
